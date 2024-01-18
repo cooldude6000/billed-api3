@@ -28,8 +28,8 @@ export async function hasSubscription() {
 
 export async function createCheckoutLink(customer: string) {
     const checkout = await stripe.checkout.sessions.create({
-        success_url: "http://localhost:3000/dashboard/billing?success=true",
-        cancel_url: "http://localhost:3000/dashboard/billing?success=true",
+        success_url: "https://billed-api3.vercel.app/dashboard",
+        cancel_url: "https://billed-api3.vercel.app/dashboard",
         customer: customer,
         line_items: [
             {
