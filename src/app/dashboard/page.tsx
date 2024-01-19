@@ -57,7 +57,7 @@ export default async function Page() {
 
             <div className="divide-y divide-zinc-200 border border-zinc-200 rounded-md">
               <p className="text-sm text-black px-6 py-4 font-medium">
-                Current Usage
+                Current Usage (You will be charged this amount on next billing $. each api call is 1$):
               </p>
               <p className="text-sm font-mono text-zinc-800 px-6 py-4">
                 {current_usage / 100}
