@@ -86,7 +86,7 @@ export default async function Page() {
                     {item.status}
                   </p>
                   <p className="text-sm font-mono text-zinc-800 px-6 py-4">
-                    {item.created.toDateString()}
+                    {item.created.toDateString() + " " + item.created.toTimeString()}
                   </p>
                 </div>
               ))}
